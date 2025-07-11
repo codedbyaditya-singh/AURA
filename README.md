@@ -1,23 +1,36 @@
-# AURA
-AI-voice assistent 
+# Aura: AI Voice Assistant 💬
 
-This is a my current working project built in Python. 
-It can listen to verbal commands and perform actions like searching, opening apps, or speaking responses using text-to-speech.
+AURA is a smart AI-based voice assistant built with Python. She listens, understands, and responds to your voice commands in real time. This is my first personal AI project — and I'm still adding more features!
 
-## Features
-
-- Responce for "AURA"
-- Voice command processing
+## 🌟 Key Features
+- Wake word detection ("Hello Aura")
+- Voice recognition using Google Speech API
 - Text-to-speech responses
-- Modular design (split into `speech.py`, `actions.py`, and `main.py`)
-- Capable of playing songs on youtube just by saying for name
-- Capable of searching on google
-- Capable to tell jokes by using joke-api
-- Can tell real time weather of asked place
+- Can open apps, tell jokes, play songs, and more
+- Session-based query logging (new!)
+- Simple and clean architecture with modular files
 
-## Futeure updation
+## 🛠️ Built With
+- Python
+- speech_recognition
+- pyttsx3
+- pywhatkit
+- webbrowser
+- Porcupine Wake Word (planned)
 
-- To make it more precise by adding concise APIs
-- To make use of NLPs in it
-- Adding history saving mechanism
-- Building an real AI-Voice Assistent that can work similarly like of google's or apples's one
+## 📽️ Demo
+👉 [Click here to watch the working demo video](https://www.linkedin.com/posts/aditya-singh199_ai-python-voiceassistant-activity-7349105649516961794-kNWs?utm_source=share&utm_medium=member_desktop&rcm=ACoAAFGQw3oBt6f6ByKiJsT5e3jBe0wj8O_sRy0)  
+(or drag your video into the README to auto-embed it!)
+
+## 🔮 Upcoming Features
+- NLP for better query handling
+- Integration with smarter APIs (e.g. OpenAI, WolframAlpha)
+- GUI support
+- Speaker recognition
+
+## 🚀 How to Run (for developers)
+```bash
+git clone https://github.com/adityasingh/aura-assistant.git
+cd aura-assistant
+pip install -r requirements.txt
+python main.py
