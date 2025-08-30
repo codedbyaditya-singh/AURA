@@ -11,8 +11,7 @@ site_urls = {
     "youtube": "https://youtube.com",
     "twitter": "https://twitter.com",
     "linkedin": "https://linkedin.com",
-    "facebook": "https://facebook.com",
-    # "spotify": "https://spotify.com",
+    "facebook": "https://facebook.com" ,
     "github": "https://github.com",
 }
 
@@ -27,7 +26,7 @@ def open_spotify():
     subprocess.call(["open", "-a", "Spotify"])
 
 def get_weather(city):
-    api_key = "61c4cc758f674b469b3184433251207"  # your API key
+    api_key = "api_key"  
     url = f"http://api.weatherapi.com/v1/current.json?key={api_key}&q={city}"
     try:
         response = requests.get(url)
@@ -86,53 +85,8 @@ def fetch_news(query):
 from reminder_func import schedule_reminder
 from speech import speak , listen
 
-def handle_reminder_command(command_lower: str) -> bool:
-    """
-    Parse a reminder command and schedule the reminder.
-    Returns True if handled, False otherwise.
-    
-    Expects command_lower to be a lowercase string containing 'remind me' etc.
-    """
-
-    # # Remove 'remind me' phrase
-    # reminder_text = command_lower.replace("remind me", "").strip()
-
-    # # Regex to find common time expressions (can be improved later)
-    # time_match = re.search(
-    #     r"(in \d+ (seconds?|minutes?|hours?)|at \d{1,2}(:\d{2})? ?(am|pm)?|tomorrow|next \w+|on \w+ \d+)",
-    #     reminder_text,
-    # )
-
-    # if time_match:
-    #     time_str = time_match.group(0)
-    #     # Task is reminder text without time part
-    #     task = reminder_text.replace(time_str, "").strip(" ,.")
-    # else:
-    #     time_str = None
-    #     task = reminder_text
-
-    # if not task:
-    #     speak("Please tell me what to remind you about.")
-    #     return True
-
-    # if time_str is None:
-    #     speak("When should I remind you?")
-    #     # You can implement a follow-up listening prompt here if you want
-    #     return True
-
-    # success = schedule_reminder(time_str, task)
-    # if not success:
-    #     speak("I couldn't set the reminder. Please try again with a different time.")
-
-    # return True
 def handle_reminder_command():
-    """
-    Conversational reminder handler:
-    - First asks what to remind about.
-    - Then asks when to remind.
-    - Finally schedules the reminder.
-    """
-
+   
     # Step 1: Ask for the task
     speak("What should I remind you about?")
     task = listen().lower().strip()
