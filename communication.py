@@ -39,28 +39,3 @@ def send_whatsapp_message(command, contacts):
 
     speak(f"Sending your message to {contact_name} on WhatsApp.")
     pywhatkit.sendwhatmsg(number, message, hour, minute)
-
-# Example usage
-if __name__ == "__main__":
-    contacts = load_contacts()
-    command = "send message to aman"  # Example command; in real use, get from speech input
-    send_whatsapp_message(command, contacts)
-# watts app message sending 
-# import pywhatkit as kit
-# import datetime
-
-# def send_whatsapp_message(contact_name, message, contacts):
-#     if contact_name not in contacts:
-#         return f"Contact '{contact_name}' not found in contact list."
-#     phone_number = contacts[contact_name]
-#     try:
-#         kit.sendwhatmsg_instantly(
-#             phone_no=phone_number,
-#             message=message,
-#             wait_time=10,   # seconds before sending
-#             tab_close=True,
-#             close_time=5
-#         )
-#         return f"Message sent to {contact_name}: {message}"
-#     except Exception as e:
-#         return f"Failed to send message: {str(e)}"
