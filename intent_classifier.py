@@ -106,7 +106,6 @@ class IntentClassifier:
           
         }
 
-        # Expand examples with synonyms
         expanded_intents = {}
         for intent, examples in base_intents.items():
             expanded = set()
