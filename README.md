@@ -33,6 +33,7 @@ JSON – persistent reminders
 
 
 ## Demo
+NOTE : The following ideo is a basic demo of aura in its early phase , the final project is capable of doing much advance things . 
 👉 [Click here to watch the working demo video](https://www.linkedin.com/posts/aditya-singh199_ai-python-voiceassistant-activity-7349105649516961794-kNWs?utm_source=share&utm_medium=member_desktop&rcm=ACoAAFGQw3oBt6f6ByKiJsT5e3jBe0wj8O_sRy0)  
 
 ## How to Run (for developers)
