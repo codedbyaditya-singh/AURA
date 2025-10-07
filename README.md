@@ -15,7 +15,9 @@ Play music/videos directly from YouTube.
 🌤 Utilities
 Get real-time weather updates.
 Set and persist reminders (stored in schedules.json).
+Get headlines updates.
 Open websites and applications.
+send wattsapp text messages.
 🤖 Personality
 Greets, introduces itself, tells jokes, and answers queries.
 🗣 Text-to-Speech
